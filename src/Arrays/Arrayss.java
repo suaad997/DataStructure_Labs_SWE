@@ -1,10 +1,15 @@
 package Arrays;
 
 public class Arrayss {
-public void test(){
-    System.out.println("test");
 
-}
+
+    public void Traversal(int []a){
+        for (int i=0; i<a.length;i++)
+            System.out.println("Index["+i+"] = "+a[i]);
+
+    }
+
+
 
 
 
