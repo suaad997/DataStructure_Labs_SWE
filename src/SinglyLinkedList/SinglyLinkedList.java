@@ -16,7 +16,7 @@ public void addFirst(E data){
     Node<E> nNode= new Node(data,head);
     head=nNode;
     if(isEmpty())
-        head=tail;
+        tail=head;
 
     size++;
 }
@@ -32,7 +32,7 @@ public E removeFirst(){
     head=head.getNext();
     size--;
     if (size()==0)
-        head=tail;
+        tail=head;
 
 return delete;
 }
