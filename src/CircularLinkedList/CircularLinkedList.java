@@ -52,8 +52,29 @@ public E removeFirst(){
     size--;
     return delete;
 }
+public E removeLast(){
+    if(isEmpty())return null;
+    E delete=tail.getData();
+    if(tail==tail.getNext()){
+        tail=null;
+    }
+    else {
+        Node<E>temp=tail.getNext();
+        while (temp.getNext()!=tail){
+            temp=temp.getNext();
+        }temp.setNext(tail.getNext());
+        tail=temp;
+    }
+    size--;
+    return delete;
+}
 public void display(){
-  //  Node<E> temp=tail.getNext();
+   Node<E> temp=tail.getNext();
+   do {
+       System.out.print(temp.getData()+"--->"); //5...>1-0....>15...>
+       temp=temp.getNext();
+   }while (temp!=tail.getNext());
+    System.out.println("go first("+temp.getData()+")");
 
 }
 

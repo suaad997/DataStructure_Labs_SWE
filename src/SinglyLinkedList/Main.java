@@ -5,9 +5,11 @@ public class Main {
         SinglyLinkedList<Integer> list=new SinglyLinkedList<Integer>();
 
         list.addLast(10);
-        list.addLast(20);
+        list.addFirst(20);
         list.addLast(30);
         list.addLast(40);
+        list.addAtPosition(80,4);
+        list.removeLast();
         list.removeFirst();
         list.display();
 
