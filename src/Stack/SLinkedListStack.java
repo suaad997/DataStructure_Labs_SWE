@@ -1,10 +1,12 @@
 package Stack;
 
+import SinglyLinkedList.SinglyLinkedList;
+
 public class SLinkedListStack<E> implements Stack<E> {
 
-    SinglyLinkedList<E> slist=new SinglyLinkedList<E>();
+SinglyLinkedList<E> slist=new SinglyLinkedList<E>();
     @Override
-    public Boolean isEmpty() {
+    public boolean isEmpty() {
         return slist.isEmpty();
     }
 
