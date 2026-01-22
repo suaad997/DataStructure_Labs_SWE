@@ -82,6 +82,17 @@ public class SinglyLinkedList<E> {
 
 
     }
+
+    public void display2() {
+        Node<E> temp = head;
+        while (temp != null) {
+            System.out.println(temp.getData() );
+            temp = temp.getNext();
+
+        }
+
+
+    }
 public void addAtPosition(E data,int position) {
        if(position<=0 || position>size+1)
            throw new IllegalArgumentException("Invaild position");
